@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="streak_placeholder">🔥 Streak: 0</string>
+    <string name="continue_your_streak">Continue your streak!</string>
+    <string name="random_quiz_image">Random Quiz Image</string>
+</resources>

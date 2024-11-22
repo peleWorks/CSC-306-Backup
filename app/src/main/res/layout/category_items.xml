@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/category_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/background_primary"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/category_ImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/category_image"
+        android:elevation="10dp"
+        android:src="@drawable/comic"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/category_name_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/category_name_placeholder"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/num_of_questions_TextView"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        app:layout_constraintTop_toBottomOf="@id/category_ImageView" />
+
+    <TextView
+        android:id="@+id/num_of_questions_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:text="@string/questions_placeholder_text"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/category_CardView"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        app:layout_constraintTop_toBottomOf="@id/category_name_TextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
